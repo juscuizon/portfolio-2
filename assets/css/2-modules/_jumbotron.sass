@@ -1,0 +1,122 @@
+.jumbotron-container
+	display: flex
+	justify-content: space-between
+	background:
+		size: cover
+		image: url(../img/jumboimage.jpg)
+		repeat: no-repeat
+		center: center
+	height: 99vh
+	width: 100vw
+	padding-top: 5px
+
+	.navigation-tab,.location-tab
+
+		a
+			color: white
+		
+
+	.navigation-tab
+		margin-left: 50px
+
+		ul
+			display: flex
+			flex-direction: row
+
+			li
+				list-style-type: none
+				margin-right: 20px
+
+				a
+					text-decoration: none
+					font-family: 'Rajdhani'
+					font-size: 20px
+				a:hover
+					color: #C0C0C0
+
+	.location-tab
+		display: none
+		margin-right: 90px
+		a
+			text-decoration: none
+			font-family: 'Cabin'
+			font-size: 16px
+
+//================Responsive Design====================
+//Medium PC Monitors
+@media (min-width: 961px) and (max-width: 1200px)
+	.jumbotron-container
+		background-position: center
+		
+		.navigation-tab,.location-tab
+			padding-top: 0px
+
+//Small Monitors and Large Tablets
+@media (min-width: 801px) and (max-width: 960px)
+	.jumbotron-container
+		background-position: center
+
+		.navigation-tab,.location-tab
+			padding-top: 0px
+
+//Small Monitors and Tablets
+@media (min-width: 501px) and (max-width: 800px)
+	.jumbotron-container
+		display: flex
+		justify-content: space-between
+		flex-direction: column
+		align-items: center
+		background:
+			size: cover
+			position: center
+			image: url(../img/jumboimage.jpg)
+			repeat: no-repeat
+		height: 99vh
+		width: 100vw
+		padding-top: 5px
+
+		.navigation-tab,.location-tab
+			padding-top: 0px
+
+		.navigation-tab
+			margin-left: 0px
+
+		.location-tab
+			margin-right: 0px
+			border: solid 1px black
+			background-color: black
+			width: 100vw
+			text-align: center
+
+//Mobile Devices
+@media (min-width: 50px) and (max-width: 500px)
+	.jumbotron-container
+		display: flex
+		justify-content: space-between
+		flex-direction: column
+		align-items: center
+		background:
+			size: cover
+			position: center
+			image: url(../img/jumboimage.jpg)
+			repeat: no-repeat
+		height: 99vh
+		width: 100vw
+		padding-top: 5px
+
+		.navigation-tab,.location-tab
+			padding-top: 0px
+
+		.navigation-tab
+			margin-left: 20px
+			ul
+				li
+					a
+						font-size: 12px
+
+		.location-tab
+			margin-right: 0px
+			border: solid 1px black
+			background-color: black
+			width: 100vw
+			text-align: center
